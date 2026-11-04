@@ -10,12 +10,12 @@ export function Craft() {
       <div className="relative max-w-6xl mx-auto">
         <div className="mb-14 md:mb-20 text-center">
           <p className="text-primary text-[10px] sm:text-xs uppercase tracking-[0.3em] mb-6">
-            The craft
+            Skills
           </p>
           <WordsPullUpMultiStyle
             segments={[
-              { text: 'Skills practiced like an instrument —', className: 'font-normal' },
-              { text: 'quietly, daily.', className: 'italic font-serif' },
+              { text: 'What I use at work', className: 'font-normal' },
+              { text: 'and in my lab.', className: 'italic font-serif' },
             ]}
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl max-w-3xl mx-auto leading-[0.95]"
           />

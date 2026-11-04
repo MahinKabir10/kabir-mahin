@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Linkedin } from 'lucide-react';
+import { Mail, Phone, Github, Linkedin } from 'lucide-react';
 import { WordsPullUpMultiStyle } from './animations/WordsPullUpMultiStyle';
 import { ContactForm } from './ContactForm';
 import { contact, personal } from '../data/content';
@@ -10,7 +10,7 @@ export function Contact() {
       <div className="bg-noise absolute inset-0 opacity-[0.12] pointer-events-none" />
       <div className="relative bg-[#101010] rounded-2xl md:rounded-[2rem] max-w-6xl mx-auto px-6 sm:px-10 md:px-16 py-20 md:py-28">
         <p className="text-primary text-[10px] sm:text-xs uppercase tracking-[0.3em] mb-8 text-center">
-          Closing scene
+          Contact
         </p>
 
         <WordsPullUpMultiStyle
@@ -34,7 +34,7 @@ export function Contact() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-5 w-full max-w-4xl">
             <ContactCard icon={<Mail size={16} />} label="Email" value={personal.email} href={`mailto:${personal.email}`} />
             <ContactCard icon={<Phone size={16} />} label="Phone" value={personal.phone} href={`tel:${personal.phone.replace(/\s/g, '')}`} />
-            <ContactCard icon={<MapPin size={16} />} label="Location" value={personal.location} />
+            <ContactCard icon={<Github size={16} />} label="GitHub" value="MahinKabir10" href={personal.github} />
             <ContactCard icon={<Linkedin size={16} />} label="LinkedIn" value="mahin-kabir" href={personal.linkedin} />
           </div>
         </div>
@@ -79,8 +79,8 @@ function ContactCard({
 function Footer() {
   return (
     <div className="relative max-w-6xl mx-auto mt-12 pt-8 border-t border-primary/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-[10px] sm:text-xs uppercase tracking-[0.25em] text-primary/40">
-      <span>© {new Date().getFullYear()} Kabir Mahin · Brisbane</span>
-      <span>Composed with intention</span>
+      <span>© {new Date().getFullYear()} {personal.fullName} · Brisbane</span>
+      <span>Built with React, Vite and Tailwind</span>
     </div>
   );
 }

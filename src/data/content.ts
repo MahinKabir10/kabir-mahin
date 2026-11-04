@@ -1,180 +1,174 @@
 export const personal = {
   name: 'Kabir',
-  fullName: 'Kabir Mahin',
+  fullName: 'Mahin Kabir',
   location: 'Brisbane, QLD',
   email: 'mahinkabirofficial@gmail.com',
   phone: '0493 148 477',
   linkedin: 'https://www.linkedin.com/in/mahin-kabir-569384361/',
-  role: 'Cybersecurity Student · Mentor · International Student Voice',
+  github: 'https://github.com/MahinKabir10',
+  role: 'Cybersecurity Student · IT Support · Brisbane',
 };
 
 export const nav = [
-  { label: 'The story', href: '#about' },
-  { label: 'Journey', href: '#journey' },
-  { label: 'Initiatives', href: '#initiatives' },
-  { label: 'Craft', href: '#craft' },
+  { label: 'About', href: '#about' },
+  { label: 'Experience', href: '#journey' },
+  { label: 'Projects', href: '#initiatives' },
+  { label: 'Skills', href: '#craft' },
   { label: 'Contact', href: '#contact' },
 ];
 
 export const hero = {
   description:
-    'A worldwide perspective on cybersecurity, education and human-centred technology. Built across three continents, two languages of code, and one belief — that quality digital experience is also a quality human experience.',
-  cta: 'Start a conversation',
+    'Second-year cybersecurity student at Victoria University Brisbane. I build detection tools in Python and run after-hours IT support on campus.',
+  cta: 'Get in touch',
 };
 
 export const about = {
-  label: 'A short biography',
+  label: 'About me',
   // Three segments rendered with mixed styles (regular / italic serif / regular)
   headlineSegments: [
-    { text: 'I am Kabir Mahin,', className: 'font-normal' },
+    { text: "I'm Mahin Kabir,", className: 'font-normal' },
     {
-      text: 'a cybersecurity student raised between Dhaka and Brisbane.',
+      text: 'a cybersecurity student from Dhaka, now studying in Brisbane.',
       className: 'italic font-serif',
     },
     {
-      text: 'I work where empathy meets engineering — supporting students, hardening systems, and making technology feel human again.',
+      text: 'I build tools that spot attacks in logs, and I fix tech problems for students after hours.',
       className: 'font-normal',
     },
   ],
   body:
-    'I currently work at Victoria University Brisbane as both a Student Mentor and an iHelper — translating technical fixes into plain language and turning quiet first-week nerves into confident momentum. Before that, years as a national-level table tennis athlete in Bangladesh taught me how composure is built: one disciplined repetition at a time, on a stage that does not forgive hesitation.',
+    "I'm in the second year of a Bachelor of Cybersecurity at Victoria University Brisbane, and I won the 2026 Block Star award for Best Cybersecurity Student. On campus I work as an iHelper, running IT support on my own from 5 to 9 PM, and as a Student Mentor. Before university I played national-level table tennis in Bangladesh. I still train my technical skills the way I trained for matches: the same basics, most days.",
 };
 
 export const journey = [
   {
-    period: '2026 — Present',
-    role: 'Student Mentor',
-    company: 'Victoria University Brisbane · ECA Group',
+    period: 'Mar 2026 – Present',
+    role: 'IT Support Assistant (iHelper)',
+    company: 'Victoria University Brisbane',
     impact:
-      'Champion the academic transition for cohorts arriving from non-English-speaking backgrounds.',
+      'I run after-hours IT support on campus from 5 to 9 PM, on my own, with no backup on site.',
     bullets: [
-      'One-on-one coaching for first-year students navigating campus, services and culture.',
-      'Active listener and translator between student worry and academic leadership.',
-      'Trusted relay for recurring concerns — turning anecdote into actionable insight.',
+      'I fix laptops, personal devices, operating systems, network connections, Microsoft 365 and software setup.',
+      'I sort requests by urgency and decide what to fix on the spot and what to send to the VU IT team.',
+      'I manage print cards, printing access and lift-access cards.',
     ],
-    tags: ['Mentorship', 'Cross-cultural', 'Active listening'],
+    tags: ['IT support', 'Microsoft 365', 'Access control'],
   },
   {
-    period: '2026 — Present',
-    role: 'iHelper · IT Support Assistant',
-    company: 'Victoria University Brisbane · ECA Group',
-    impact:
-      'Evening-shift first responder for hardware, software and LMS issues across the campus.',
+    period: 'Mar 2026 – Present',
+    role: 'Student Ambassador & Student Mentor',
+    company: 'Victoria University Brisbane',
+    impact: 'I help new and continuing students settle in at VU.',
     bullets: [
-      'Plain-language troubleshooting for students at every level of digital literacy.',
-      'Frontline judgment call: resolve locally or escalate to the VU IT team.',
-      'Quietly maintain the after-hours rhythm that lets coursework keep moving.',
+      'I guide students through enrolment, USI setup, study materials and VU systems.',
+      'I co-run orientation and peer-support sessions with VU staff.',
+      'I represent VU Brisbane as a student ambassador on the university website.',
     ],
-    tags: ['IT Support', 'Microsoft 365', 'LMS'],
+    tags: ['Mentoring', 'Orientation'],
   },
   {
-    period: '2025 — Present',
-    role: 'Casual Team Member · Dairy',
-    company: 'Coles, Greenslopes',
-    impact:
-      'Reliability under pressure — service standards held during peak retail hours alongside full-time study.',
+    period: 'Jul 2025 – Present',
+    role: 'Team Member, Customer Service, Dairy & Grocery',
+    company: 'Coles Local Coorparoo',
+    impact: 'I serve around 200 customers a day at the service desk.',
     bullets: [
-      'Detail and pace, balanced — presentation standards met across rotating shifts.',
-      'Small team coordination during peak periods.',
-      'A grounding rhythm that keeps the work-study balance honest.',
+      'I handle transactions, questions and returns in a busy store.',
+      'I follow FIFO rotation, temperature checks and cold-chain food safety across three departments.',
+      'I pick click & collect and home-delivery orders on early-morning and evening shifts.',
     ],
-    tags: ['Operations', 'Reliability', 'Teamwork'],
+    tags: ['Customer service', 'Compliance'],
   },
   {
-    period: '2018 — 2023',
-    role: 'National Table Tennis Athlete',
+    period: '2018 – 2023',
+    role: 'National-level table tennis player',
     company: 'Bangladesh',
-    impact:
-      'Five years of high-performance training that became the operating system for everything since.',
-    bullets: [
-      'Composure under pressure — built one match, one point at a time.',
-      'Disciplined repetition as a daily practice, not a slogan.',
-      'A team mindset shaped by environments that reward quiet contribution.',
-    ],
-    tags: ['Discipline', 'Performance', 'Resilience'],
+    impact: 'Five years of competitive table tennis taught me discipline and how to stay calm under pressure.',
+    bullets: ['I trained and competed at national level in Bangladesh from 2018 to 2023.'],
+    tags: ['Discipline', 'Composure'],
   },
 ];
 
 export const initiatives = [
   {
     n: '01',
-    title: 'Crossroads.',
+    title: 'SentryLog.',
     blurb:
-      'A peer mentoring practice for international students arriving into Australian higher education.',
+      'A Python SIEM that reads Linux auth.log and Windows Security logs and flags attacks.',
     points: [
-      'Cohort onboarding for non-English-speaking-background students.',
-      'Academic-integrity coaching with cultural fluency.',
-      'Insight loop back to academic leadership.',
+      'Rules for brute force, privilege escalation and compromised logins.',
+      'Severity levels, with the raw log lines kept as evidence.',
+      '39 tests and a read-only MCP server for plain-English summaries.',
     ],
-    accent: 'Mentorship Practice',
+    accent: 'Threat detection',
+    link: 'https://github.com/MahinKabir10/SentryLog',
   },
   {
     n: '02',
-    title: 'Night Watch.',
-    blurb:
-      'After-hours IT support for the moments coursework cannot wait — calm, methodical, plain-language.',
+    title: 'NetRecon.',
+    blurb: 'A Python network scanner I run on my own lab network.',
     points: [
-      'Hardware, software and LMS triage under time pressure.',
-      'Translation layer between student panic and IT escalation.',
-      'On-campus continuity when the day team has gone home.',
+      'Ping sweep, TCP connect scan and banner grabbing.',
+      'A rough OS guess from TTL values.',
+      'HTML and JSON reports.',
     ],
-    accent: 'IT Operations',
+    accent: 'Network reconnaissance',
+    link: 'https://github.com/MahinKabir10/Netrecon',
   },
   {
     n: '03',
-    title: 'First Serve.',
-    blurb:
-      'A national-level athletic career rebuilt as a personal philosophy of quiet excellence.',
+    title: 'Home Lab.',
+    blurb: 'Kali Linux and Metasploitable on an isolated VirtualBox network.',
     points: [
-      'Five years competing for Bangladesh at the national level (2018–2023).',
-      'Composure, repetition, and the discipline of the long game.',
-      'A foundation other people now feel as steadiness.',
+      'Metasploit, XSS and SQL injection practice.',
+      'Hardening with ACLs and OpenSSL encryption.',
+      'A three-site OSPF network designed in Cisco Packet Tracer.',
     ],
-    accent: 'Athletic Discipline',
+    accent: 'Attack and defence',
   },
 ];
 
 export const skillGroups = [
   {
-    title: 'Communication',
-    skills: ['Verbal & written clarity', 'Active listening', 'Public speaking', 'Stakeholder liaison'],
+    title: 'Security',
+    skills: ['Log analysis', 'SIEM and detection rules', 'Kali Linux', 'Metasploit', 'XSS and SQL injection'],
   },
   {
-    title: 'Problem solving',
-    skills: ['Analytical thinking', 'Structured troubleshooting', 'Escalation judgement', 'Calm under load'],
+    title: 'Networking',
+    skills: ['TCP/IP', 'OSPF routing', 'VLSM subnetting', 'Cisco Packet Tracer'],
   },
   {
-    title: 'Technology',
-    skills: ['IT support', 'Microsoft 365', 'LMS platforms', 'Python (learning)', 'Cybersecurity fundamentals'],
+    title: 'Systems',
+    skills: ['Linux', 'Windows', 'Server administration', 'Microsoft 365', 'VirtualBox'],
   },
   {
-    title: 'Student insight',
-    skills: ['International student perspective', 'Academic integrity', 'AI in education', 'Higher-education policy'],
+    title: 'Code',
+    skills: ['Python', 'Git and GitHub', 'Unit testing', 'MCP servers'],
+  },
+  {
+    title: 'People',
+    skills: ['Plain-language explanations', 'Mentoring', 'Customer service'],
   },
   {
     title: 'Languages',
     skills: ['English (fluent)', 'Bengali (native)', 'Hindi (fluent)', 'Chinese (basic)', 'Japanese (basic)'],
-  },
-  {
-    title: 'Leadership in study',
-    skills: ['Robert Greene', 'Dale Carnegie', 'Charles Duhigg', 'Self-directed practice'],
   },
 ];
 
 export const education = {
   degree: 'Bachelor of Cybersecurity',
   school: 'Victoria University · Brisbane Campus',
-  period: 'Apr 2025 — Apr 2028',
-  note: 'Year 2 (current). Coursework: Python, object-oriented design, network fundamentals, cybersecurity principles.',
+  period: 'Apr 2025 – Apr 2028',
+  note: 'Year 2. Best Cybersecurity Student (Block Star), VU Brisbane 2026. Server Administration & Management 86 (HD), Data Privacy & Cyber Physical Systems Security 78 (D).',
 };
 
 export const contact = {
   headline: [
-    { text: 'Let us', className: 'font-normal' },
-    { text: 'build something quietly remarkable.', className: 'italic font-serif' },
+    { text: "I'm looking for a cyber", className: 'font-normal' },
+    { text: 'internship in Brisbane.', className: 'italic font-serif' },
   ],
   body:
-    'Open to mentorship, student panels, IT support and cybersecurity opportunities across Brisbane and beyond.',
+    "I'm open to cybersecurity internships, IT support work and mentoring roles in Brisbane. Email or call me.",
 };
 
 export const media = {

@@ -15,18 +15,18 @@ export function Initiatives() {
       <div className="relative max-w-7xl mx-auto">
         <div className="mb-14 md:mb-20 text-center">
           <p className="text-primary text-[10px] sm:text-xs uppercase tracking-[0.3em] mb-6">
-            Initiatives
+            Projects
           </p>
           <WordsPullUpMultiStyle
             segments={[
-              { text: 'Studio-grade workflows for visionary creators.', className: '' },
+              { text: 'I build security tools to learn how attacks show up in logs.', className: '' },
             ]}
             className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal text-primary max-w-4xl mx-auto"
           />
           <div className="mt-3">
             <WordsPullUpMultiStyle
               segments={[
-                { text: 'Built for steady minds. Powered by curiosity.', className: '' },
+                { text: 'The code is on GitHub.', className: '' },
               ]}
               className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal text-gray-500"
               delay={0.4}
@@ -66,12 +66,12 @@ function VideoCard() {
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
       <div className="absolute bottom-6 left-6 right-6">
-        <p className="text-xs uppercase tracking-[0.25em] text-primary/60 mb-3">My canvas</p>
+        <p className="text-xs uppercase tracking-[0.25em] text-primary/60 mb-3">Lab work</p>
         <h3
           className="text-2xl sm:text-3xl md:text-4xl font-normal leading-tight"
           style={{ color: '#E1E0CC' }}
         >
-          Your creative canvas.
+          Tested in my own lab.
         </h3>
       </div>
     </motion.div>
@@ -86,9 +86,10 @@ type FeatureProps = {
   blurb: string;
   points: string[];
   accent: string;
+  link?: string;
 };
 
-function FeatureCard({ index, icon, n, title, blurb, points, accent }: FeatureProps) {
+function FeatureCard({ index, icon, n, title, blurb, points, accent, link }: FeatureProps) {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: '-100px' });
 
@@ -125,13 +126,17 @@ function FeatureCard({ index, icon, n, title, blurb, points, accent }: FeaturePr
           </li>
         ))}
       </ul>
-      <a
-        href="#contact"
-        className="mt-auto inline-flex items-center gap-2 text-primary text-xs sm:text-sm hover:gap-3 transition-all duration-300"
-      >
-        <span>Learn more</span>
-        <ArrowRight size={14} className="-rotate-45" />
-      </a>
+      {link && (
+        <a
+          href={link}
+          target="_blank"
+          rel="noreferrer"
+          className="mt-auto inline-flex items-center gap-2 text-primary text-xs sm:text-sm hover:gap-3 transition-all duration-300"
+        >
+          <span>View code on GitHub</span>
+          <ArrowRight size={14} className="-rotate-45" />
+        </a>
+      )}
     </motion.div>
   );
 }

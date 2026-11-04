@@ -10,12 +10,12 @@ export function Journey() {
       <div className="relative max-w-6xl mx-auto">
         <div className="text-center mb-14 md:mb-20">
           <p className="text-primary text-[10px] sm:text-xs uppercase tracking-[0.3em] mb-6">
-            The journey
+            Experience
           </p>
           <WordsPullUpMultiStyle
             segments={[
-              { text: 'Eight years of practice,', className: 'font-normal' },
-              { text: 'shaped on three continents.', className: 'italic font-serif' },
+              { text: 'Work, study and sport,', className: 'font-normal' },
+              { text: 'from Dhaka to Brisbane.', className: 'italic font-serif' },
             ]}
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl max-w-3xl mx-auto leading-[0.95]"
           />
